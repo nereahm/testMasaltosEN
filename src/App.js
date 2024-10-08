@@ -30,7 +30,7 @@ function App() {
         let resultImageUrl = "";
         switch (maxAnswer) {
             case 'a':
-                resultText = "Empreendedor do ano";
+                resultText = "Businessman of the Year";
                 resultImageUrl = "https://pruebas.masaltos.com/img/cms/empresario.png";
                 break;
             case 'b':
@@ -38,15 +38,15 @@ function App() {
                 resultImageUrl = "https://pruebas.masaltos.com/img/cms/sport.png";
                 break;
             case 'c':
-                resultText = "Noivo perfeito";
-                resultImageUrl = "https://pruebas.masaltos.com/img/cms/novio.png";
+                resultText = "Perfect Groom";
+                resultImageUrl = "https://pruebas.masaltos.com/img/cms/novioperfecto.png";
                 break;
             case 'd':
                 resultText = "Nice man";
                 resultImageUrl = "https://pruebas.masaltos.com/img/cms/niceman.png";
                 break;
             case 'e':
-                resultText = "Familiar";
+                resultText = "Family man";
                 resultImageUrl = "https://pruebas.masaltos.com/img/cms/familiar.png";
                 break;
             case 'f':
@@ -69,76 +69,76 @@ function App() {
 
     return (
         <div className="quiz-container">
-            <h1>Que estilo você procura?</h1>
+            <h1>What style are you looking for?</h1>
             <form id="quizForm">
-                {/* Pergunta 1 */}
+                {/* Pregunta 1 */}
                 <div className="question">
-                    <p>1. Qual é a sua atividade favorita durante o tempo livre?</p>
-                    <label><input type="radio" name="q1" value="a" /> Eventos profissionais.</label>
-                    <label><input type="radio" name="q1" value="b" /> Pratique esportes ou atividades ao ar livre.</label>
-                    <label><input type="radio" name="q1" value="c" /> Preparativos para eventos especiais.</label>
-                    <label><input type="radio" name="q1" value="d" /> Saia com amigos.</label>
-                    <label><input type="radio" name="q1" value="e" /> Passe algum tempo com a família.</label>
-                    <label><input type="radio" name="q1" value="f" /> Participe de festas.</label>
+                    <p>1. What is your favorite activity during your free time?</p>
+                    <label><input type="radio" name="q1" value="a" /> Professional events.</label>
+                    <label><input type="radio" name="q1" value="b" /> Practicing sports or outdoor activities.</label>
+                    <label><input type="radio" name="q1" value="c" /> Preparing for special events.</label>
+                    <label><input type="radio" name="q1" value="d" /> Going out with friends.</label>
+                    <label><input type="radio" name="q1" value="e" /> Spending time with family.</label>
+                    <label><input type="radio" name="q1" value="f" /> Attending parties.</label>
                 </div>
 
-                {/* Pergunta 2 */}
+                {/* Pregunta 2 */}
                 <div className="question">
-                    <p>2. Como você descreveria sua abordagem à moda?</p>
-                    <label><input type="radio" name="q2" value="a" /> Elegante e profissional.</label>
-                    <label><input type="radio" name="q2" value="b" /> Casual e confortável.</label>
-                    <label><input type="radio" name="q2" value="c" /> Refinado e sofisticado.</label>
-                    <label><input type="radio" name="q2" value="d" /> Atraente e versátil.</label>
-                    <label><input type="radio" name="q2" value="e" /> Descontraído e confortável.</label>
-                    <label><input type="radio" name="q2" value="f" /> Na moda.</label>
+                    <p>2. How would you describe your approach to fashion?</p>
+                    <label><input type="radio" name="q2" value="a" /> Elegant and professional.</label>
+                    <label><input type="radio" name="q2" value="b" /> Casual and comfortable.</label>
+                    <label><input type="radio" name="q2" value="c" /> Refined and sophisticated.</label>
+                    <label><input type="radio" name="q2" value="d" /> Attractive and versatile.</label>
+                    <label><input type="radio" name="q2" value="e" /> Relaxed and comfortable.</label>
+                    <label><input type="radio" name="q2" value="f" /> Trendy.</label>
                 </div>
 
-                {/* Pergunta 3 */}
+                {/* Pregunta 3 */}
                 <div className="question">
-                    <p>3. Que tipo de eventos você prefere participar?</p>
-                    <label><input type="radio" name="q3" value="a" /> Eventos de empresa.</label>
-                    <label><input type="radio" name="q3" value="b" /> Competições esportivas.</label>
-                    <label><input type="radio" name="q3" value="c" /> Casamentos, aniversários e celebrações pessoais.</label>
-                    <label><input type="radio" name="q3" value="d" /> Reuniões sociais e jantares com amigos.</label>
-                    <label><input type="radio" name="q3" value="e" /> Atividades familiares e jantares em casa.</label>
-                    <label><input type="radio" name="q3" value="f" /> Concertos, clubes e eventos noturnos.</label>
+                    <p>3. What type of events do you prefer to attend?</p>
+                    <label><input type="radio" name="q3" value="a" /> Corporate events.</label>
+                    <label><input type="radio" name="q3" value="b" /> Sports competitions.</label>
+                    <label><input type="radio" name="q3" value="c" /> Weddings, anniversaries, and personal celebrations.</label>
+                    <label><input type="radio" name="q3" value="d" /> Social gatherings, dinners, and outings with friends.</label>
+                    <label><input type="radio" name="q3" value="e" /> Family activities, gatherings, and home dinners.</label>
+                    <label><input type="radio" name="q3" value="f" /> Concerts, clubs, and nightlife events.</label>
                 </div>
 
-                {/* Pergunta 4 */}
+                {/* Pregunta 4 */}
                 <div className="question">
-                    <p>4. O que é mais importante ao escolher sua roupa?</p>
-                    <label><input type="radio" name="q4" value="a" /> Projetar elegância e profissionalismo.</label>
-                    <label><input type="radio" name="q4" value="b" /> Conforto e desempenho.</label>
-                    <label><input type="radio" name="q4" value="c" /> Estilo e impacto em ocasiões especiais.</label>
-                    <label><input type="radio" name="q4" value="d" /> Adaptabilidade a diferentes situações sociais.</label>
-                    <label><input type="radio" name="q4" value="e" /> Conforto para o dia a dia.</label>
-                    <label><input type="radio" name="q4" value="f" /> Destacar em eventos noturnos.</label>
+                    <p>4. What is most important when choosing your outfit?</p>
+                    <label><input type="radio" name="q4" value="a" /> Projecting elegance and professionalism.</label>
+                    <label><input type="radio" name="q4" value="b" /> Comfort and performance.</label>
+                    <label><input type="radio" name="q4" value="c" /> Style and impact on special occasions.</label>
+                    <label><input type="radio" name="q4" value="d" /> Adaptability to different social situations.</label>
+                    <label><input type="radio" name="q4" value="e" /> Comfort for daily life.</label>
+                    <label><input type="radio" name="q4" value="f" /> Standing out at nightlife events.</label>
                 </div>
 
-                {/* Pergunta 5 */}
+                {/* Pregunta 5 */}
                 <div className="question">
-                    <p>5. Com qual estilo você se sente mais seguro?</p>
-                    <label><input type="radio" name="q5" value="a" /> Um look profissional que projete confiança.</label>
-                    <label><input type="radio" name="q5" value="b" /> Roupas que permitam liberdade de movimento e funcionalidade.</label>
-                    <label><input type="radio" name="q5" value="c" /> Um estilo refinado para destacar em eventos especiais.</label>
-                    <label><input type="radio" name="q5" value="d" /> Uma vestimenta que brilha em reuniões sociais.</label>
-                    <label><input type="radio" name="q5" value="e" /> Um estilo relaxado e confortável para passar tempo com a família.</label>
-                    <label><input type="radio" name="q5" value="f" /> Um look na moda para brilhar em eventos noturnos.</label>
+                    <p>5. Which style makes you feel most confident?</p>
+                    <label><input type="radio" name="q5" value="a" /> A professional look that projects confidence.</label>
+                    <label><input type="radio" name="q5" value="b" /> Clothes that allow freedom of movement and functionality.</label>
+                    <label><input type="radio" name="q5" value="c" /> A refined style to stand out at special events.</label>
+                    <label><input type="radio" name="q5" value="d" /> An outfit that shines at social gatherings.</label>
+                    <label><input type="radio" name="q5" value="e" /> A relaxed and comfortable style for family time.</label>
+                    <label><input type="radio" name="q5" value="f" /> A trendy look to shine at nightlife events.</label>
                 </div>
 
-                <button type="button" onClick={calculateResult}>Enviar</button>
+                <button type="button" onClick={calculateResult}>Submit</button>
             </form>
 
-            {/* Modal para mostrar o resultado */}
+            {/* Modal para mostrar el resultado */}
             <div id="resultModal" className="modal" style={{ display: 'none' }}>
                 <div className="modal-content">
-                    <p className="result-text" id="resultText">Seu estilo é: {result}</p>
+                    <p className="result-text" id="resultText">Your style is: {result}</p>
                     {resultImage && (
                         <div style={{ textAlign: 'center' }}>
                             <img src={resultImage} alt={result} style={{ width: '200px', height: 'auto', margin: '10px' }} />
                         </div>
                     )}
-                    <button className="close-button" onClick={closeModal}>Fechar</button>
+                    <button className="close-button" onClick={closeModal}>Close</button>
                 </div>
             </div>
         </div>
